@@ -12,6 +12,9 @@ module SlackLogger
   mattr_accessor :client
   self.token = nil
 
+  mattr_accessor :logger
+  self.logger = nil
+
   def self.setup
     yield self
   end
