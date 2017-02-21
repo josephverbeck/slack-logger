@@ -10,7 +10,7 @@ module SlackLogger
       client.auth_test
       client.chat_postMessage({
                                   channel: SlackLogger.channel,
-                                  text: "",
+                                  text: message,
                                   attachments: [{
                                                     fallback: "Required plain-text summary of the attachment.",
                                                     pretext: message.to_s,
