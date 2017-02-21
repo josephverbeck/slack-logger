@@ -6,7 +6,9 @@ module SlackLogger
     end
 
     def self.write(message)
-      p "SlackLogger reporting " + message
+      client = SlackLogger.client
+      client.auth_test
+      client.chat_postMessage({channel: SlackLogger.channel, text: message, as_user: true})
     end
 
   end
