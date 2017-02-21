@@ -12,9 +12,11 @@ SlackLogger.setup do |config|
   #  ---------
   #
   #  The error level you would like to see in slack
+  #  Note: We support all log levels, but you shouldn't do anything less then :ERROR as Slack only allows one message
+  #  per minute.
   #
   ## Default:
-  # config.logger.level = :INFO
+  # config.logger.level = :ERROR
 
   ## Slack Client
   # -------------
