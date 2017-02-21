@@ -8,7 +8,16 @@ module SlackLogger
     def self.write(message)
       client = SlackLogger.client
       client.auth_test
-      client.chat_postMessage({channel: SlackLogger.channel, text: message.to_s, as_user: true})
+      client.chat_postMessage({
+                                  channel: SlackLogger.channel,
+                                  text: message.to_s,
+                                  attachmnts: [{
+                                                   tittle: "#{Rails.application.class.parent_name}",
+                                                   footer: "#{Rails.application.class.parent_name}",
+                                                   ts: "#{Time.now.utc.to_i}"
+                                               }
+                                      ],
+                                  as_user: true})
     end
 
   end
