@@ -6,6 +6,7 @@ module SlackLogger
     end
 
     def self.write(message)
+      p "SlackLogger reporting " + message
     end
 
   end
