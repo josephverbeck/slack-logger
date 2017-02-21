@@ -10,7 +10,7 @@ module SlackLogger
       client.auth_test
       client.chat_postMessage({
                                   channel: SlackLogger.channel,
-                                  text: {attachments: [{
+                                  attachments: [{
                                                            pretext: message.to_s,
                                                            ts: "#{Time.now.utc.to_i}",
                                                            fields: [
@@ -26,7 +26,7 @@ module SlackLogger
                                                                }
                                                            ],
                                                            color: "#F35A00"
-                                                       }]}.to_json,
+                                                       }].to_json,
                                   as_user: true})
     end
 
