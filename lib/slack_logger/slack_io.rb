@@ -11,12 +11,11 @@ module SlackLogger
       client.chat_postMessage({
                                   channel: SlackLogger.channel,
                                   text: message.to_s,
-                                  attachmnts: [{
+                                  attachments: [{
                                                    tittle: "#{Rails.application.class.parent_name}",
                                                    footer: "#{Rails.application.class.parent_name}",
                                                    ts: "#{Time.now.utc.to_i}"
-                                               }
-                                      ],
+                                               }],
                                   as_user: true})
     end
 
