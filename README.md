@@ -1,8 +1,5 @@
 # Slack::Logger
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+Simple Slack logger using ActiveSupport broadcast and slack-ruby-client
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -13,13 +10,28 @@ gem 'slack-logger'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
-Or install it yourself as:
+Finally, run the install generator:
 ```bash
-$ gem install slack-logger
+$ rails generate slack_logger:install
 ```
+
+it will create the followin initializer `config/initializers/slack_logger.rb`. 
+This file contains all the information about the existing configuration options.
+
+##Configuration
+The gem makes use of the rails log and slack-ruby-client to force logs to be sent to both your normal log file and a slack channel.
+
+To configure your rails application simple add the below code to where you setup your rails log
+
+```ruby
+config.after_initialize do
+  config.logger.extend ActiveSupport::Logger.broadcast(SlackLogger.logger)
+end
+```
+
 
 ## Contributing
 Contribution directions go here.
