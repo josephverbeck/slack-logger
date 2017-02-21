@@ -15,7 +15,7 @@ module SlackLogger
                                                    tittle: "#{Rails.application.class.parent_name}",
                                                    footer: "#{Rails.application.class.parent_name}",
                                                    ts: "#{Time.now.utc.to_i}"
-                                               }],
+                                               }.to_json],
                                   as_user: true})
     end
 
