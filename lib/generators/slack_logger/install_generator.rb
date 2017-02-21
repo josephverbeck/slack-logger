@@ -5,7 +5,7 @@ module SlackLogger
     desc "Create a SlackLogger initializer"
 
     def copy_initializer
-      template 'slack-logger.rb', 'config/initializers/slack-logger.rb'
+      template 'slack_logger.rb', 'config/initializers/slack_logger.rb'
     end
 
   end
