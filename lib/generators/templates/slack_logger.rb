@@ -23,7 +23,7 @@ SlackLogger.setup do |config|
   # Note: slack-ruby-client is imported with this gem and is recommended
   #
   ## Default:
-  # config.client = Slack::Web::Client.new
+  # config.client = Slack::Web::Client.new(:token => Rails.application.secrets.slack_api_token)
 
 
   ## Slack Channel
