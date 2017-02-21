@@ -8,7 +8,7 @@ module SlackLogger
     def self.write(message)
       client = SlackLogger.client
       client.auth_test
-      client.chat_postMessage({channel: SlackLogger.channel, text: message, as_user: true})
+      client.chat_postMessage({channel: SlackLogger.channel, text: message.to_s, as_user: true})
     end
 
   end
