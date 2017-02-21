@@ -1,3 +1,4 @@
+require 'slack-ruby-client'
 require 'slack_logger/logger'
 require 'slack_logger/slack_io'
 
