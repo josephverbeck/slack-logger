@@ -1,4 +1,6 @@
 # slack-logger
+[![Build Status](https://travis-ci.org/josephverbeck/slack-logger.svg?branch=master)](https://travis-ci.org/josephverbeck/slack-logger)
+
 Simple Slack logger using ActiveSupport broadcast and slack-ruby-client
 
 ## Installation
