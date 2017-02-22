@@ -3,6 +3,9 @@ rvm:
   - 2.3.1
 before_script:
   - bundle exec rspec
+addons:
+    code_climate:
+    repo_token: b7b0b7b2e9cfcd1452eb7c20a3cb341eb1fdc9f64463c2fc61f64e38e6c2a2f1
 deploy:
   provider: rubygems
   api_key:
