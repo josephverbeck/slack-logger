@@ -14,6 +14,7 @@ module Dummy
     config.after_initialize do
       config.logger.extend ActiveSupport::Logger.broadcast(SlackLogger::Logger.new(SlackLogger::SlackIO))
     end
+
   end
 end
 
