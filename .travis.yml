@@ -1,0 +1,8 @@
+deploy:
+  provider: rubygems
+  api_key:
+    secure: TbwWZO359tXYwh/YYMtk+7XEnijbWN8fcE08mN9WMc4l3I3PVPXmJ3xmYY19Qix1eQa4uDhIIVlpSSTPMO4we+TO+QEh13/U2KVAi7W181qG1odNYLinn7Yss0Qazj/q5PddQ1ubhwEhm2O1pAl1VBMJ6eho69M0KAGeJqOqpZw6K1cbKeoTr+ZOj+xV/pu1cXlgh3PccHTXX0T6Ex7Ct8areEjyDWbQF0w0okeAaL13ciIwpAN1mL94oYsHQ8/M/Kk0ovt3sFRxd9+cPA1SDik17wTir0/m70oLhS85Fotu9z0uyBYyI2SgMa2pVJFjlPeQIuchJaFj1fcRjScGIbkgEsL5rp7pYLDFl7Hqv/wl2CaTixRpF9EvO6x9601rWO2Z3pamV0IOTqBz5TpA6NDbLDX/FgSZEcl6BlqddYKn87fDDXaDlMCOvTzs+TThX1SI2zvP0wZKhm31cvxrwsG76o8aBlng7/lBr+19FQ5h4fzC+lD4QFNFeF+sUAaO4deZniBGgzfkRBa1AUtud8ObTlOofx0L2GDkqfF/M+B3FcdnkPlnrqzwE+EcJwETlVwYLSKarPoJgdI/R5vQMJA3KTA/orsUd0LY0g0il3lZTc01MUG9mhDiVskLlqpPPe+yxbmJ4yuyQnxyJBtn404Wd74UbLG8swoDgmp5HSk=
+  gem: slack-logger
+  on:
+    tags: true
+    repo: josephverbeck/slack-logger
