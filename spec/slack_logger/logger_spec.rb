@@ -19,4 +19,7 @@ RSpec.describe SlackLogger::Logger do
     it {expect(logger).to respond_to(:log)}
   end
 
+  context 'default format' do
+
+  end
 end
