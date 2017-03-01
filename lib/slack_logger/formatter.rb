@@ -11,7 +11,7 @@ module SlackLogger
       @format ||= Proc.new { | severity, time, _progname, msg | { channel: SlackLogger.channel,
                   attachments: [{
                                     pretext: msg.to_s,
-                                    ts: "#{time}",
+                                    ts: "#{time.to_i}",
                                     fields: [
                                         {
                                             title: "Project",
