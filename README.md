@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/josephverbeck/slack-logger.svg?branch=master)](https://travis-ci.org/josephverbeck/slack-logger)
 [![Code Climate](https://codeclimate.com/github/josephverbeck/slack-logger/badges/gpa.svg)](https://codeclimate.com/github/josephverbeck/slack-logger)
 [![Test Coverage](https://codeclimate.com/github/josephverbeck/slack-logger/badges/coverage.svg)](https://codeclimate.com/github/josephverbeck/slack-logger/coverage)
-
+[![Gem Version](https://badge.fury.io/rb/slack-logger.svg)](https://badge.fury.io/rb/slack-logger)
 
 Simple Slack logger using ActiveSupport broadcast and slack-ruby-client
 
