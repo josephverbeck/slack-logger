@@ -54,7 +54,11 @@ SlackLogger.setup do |config|
   #                         }].to_json,
   #           as_user: true}
   # }
-  # config.logger.formatter = SlackLogger::Formatter.new.format = -> {}
+  # Please use a Proc if you would like to set format to something else
+  # Example: SlackLogger::Formatter.new.format = -> {}
+  #
+  # Comment out the below
+  # config.logger.formatter = SlackLogger::Formatter.new.format
 
   ## Slack Channel
   #  -------------
